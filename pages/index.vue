@@ -4,8 +4,9 @@
     <h1 class="element">Busca a tu Pokemon favorito!</h1>
     <input class="element" 
       type="text" 
-      placeholder="Escribe el numero">
-      <button>Ir</button>
+      placeholder="Escribe el número"
+      v-model="pokmeonId">
+      <button @click="goToPokemonView">Ir</button>
   </section>
 </template>
 
@@ -13,8 +14,15 @@
 
 
 export default {
-  components: {
-    
+  data(){
+    return {
+      pokmeonId:''
+    }
+  },
+  methods:{
+    goToPokemonView(){
+      this.$router.push('/pokemons/'+pokmeonId)
+    }
   }
 }
 </script>
