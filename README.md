@@ -1,6 +1,6 @@
-# nuxt-orizaba
+# Nuxt Pokemon Example
 
-> My outstanding Nuxt.js project
+> Example Project using simpleNuxt with express and axios
 
 ## Build Setup
 
