@@ -2,7 +2,10 @@
   <section class="card-view">
     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/International_Pok%C3%A9mon_logo.svg/250px-International_Pok%C3%A9mon_logo.svg.png" alt="Pokemon Logo">
     <h1 class="element">Busca a tu Pokemon favorito!</h1>
-    <input class="element" type="text" placeholder="Escribe el numero"><button>Ir</button>
+    <input class="element" 
+      type="text" 
+      placeholder="Escribe el numero">
+      <button>Ir</button>
   </section>
 </template>
 
@@ -18,7 +21,6 @@ export default {
 
 <style>
 .card-view{
-        padding: 500px;
         position: absolute;
         top: 50%;
         left: 50%;
