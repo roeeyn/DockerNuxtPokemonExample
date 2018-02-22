@@ -5,7 +5,7 @@
     <input class="element" 
       type="text" 
       placeholder="Escribe el número"
-      v-model="pokmeonId">
+      v-model="pokemonId">
       <button @click="goToPokemonView">Ir</button>
   </section>
 </template>
@@ -16,12 +16,12 @@
 export default {
   data(){
     return {
-      pokmeonId:''
+      pokemonId:''
     }
   },
   methods:{
     goToPokemonView(){
-      this.$router.push('/pokemons/'+pokmeonId)
+      this.$router.push('/pokemons/'+this.pokemonId)
     }
   }
 }

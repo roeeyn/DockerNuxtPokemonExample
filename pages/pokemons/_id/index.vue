@@ -14,15 +14,16 @@
 
         data(){
             return{
-                spriteUrl:'',
-                name:'',
-                weight:''
+                id:this.$route.params.id,
+                spriteUrl:'http://rootear.com/files/2017/02/404.jpg',
+                name:'Sin pokemon',
+                weight:'Sin peso'
             }
         },
         methods:{
             goSearchPokemon(){
 
-                axios.get('https://pokeapi.co/api/v2/pokemon/150/')
+                axios.get('https://pokeapi.co/api/v2/pokemon/'+this.id+'/')
                     .then(result => {
                         console.log(result)
                         this.spriteUrl = result.data.sprites.front_default
@@ -35,7 +36,7 @@
 
             }
         },
-        created(){
+        mounted(){
             this.goSearchPokemon()
         }
 
