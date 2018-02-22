@@ -27,7 +27,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 .card-view{
         position: absolute;
         top: 50%;
